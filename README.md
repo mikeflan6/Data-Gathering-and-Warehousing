@@ -1,4 +1,4 @@
-# NJ Pine Trees
+# New Jersey Pine Trees
 **iNaturalist Pine Tree Observations from 1998-2025**
 
 ## Data Information
