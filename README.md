@@ -1,10 +1,10 @@
 # Arborist Elite of Garden State Manor
 **New Jersey's Premier Log Cabin Suppliers**
 
-## Data Information
+##  A fictional company created to demonstrate knowledge of comprehensive database systems. This project showcases implementation and demonstration of how a database can be used for analysis by collecting, storing, and retrieving data.
 
 ### Where is the data from?
-Data was extracted by account user Michael Flanagan using the Download feature on [iNaturalist](inaturalist.org). Data is in .csv file format.
+Data is collected from iNaturalist, USDA FIA Datamart, and the creative minds of Michael Flanagan and Andrew Morales
 
 ### How was it collected?
 Data is crowdsourced by iNaturalist users making observations in the wild. These observations are reviewed within the community to verify findings and ensure quality standards. Verified observations are labeled as "Research-Grade" and can be used for scientific research.
