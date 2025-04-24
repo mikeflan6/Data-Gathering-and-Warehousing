@@ -44,7 +44,7 @@ MySQL Workbench was used to generate the schema for the Arborist Elite database 
 | Column Name   | Data Type     | Description                              |
 |---------------|---------------|------------------------------------------|
 | `sales_id`    | Integer       | Unique identifier for each sale.         |
-| `sales_date`  | Date          | Date of the sale.                        |
+| `sales_date`  | Date          | Date of the sale (MM/DD/YYYY)            |
 | `sales_price` | Decimal       | Total price of the sale.                 |
 | `customer_id` | Integer       | Identifier linking to the `customers` table. |
 
