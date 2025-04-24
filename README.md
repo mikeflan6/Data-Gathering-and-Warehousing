@@ -1,7 +1,7 @@
 # Arborist Elite of Garden State Manor
 **New Jersey's Premier Log Cabin Suppliers**
 
-##  A fictional company created to demonstrate knowledge of comprehensive database systems. This project showcases implementation and demonstration of how a database can be used for analysis by collecting, storing, and retrieving data.
+###  A fictional company created to demonstrate knowledge of comprehensive database systems. This project showcases implementation and demonstration of how a database can be used for analysis by collecting, storing, and retrieving data.
 
 ### Where is the data from?
 Data is collected from iNaturalist, USDA FIA Datamart, randomly generated data from Mockaroo, and the creative minds of Michael Flanagan and Andrew Morales
