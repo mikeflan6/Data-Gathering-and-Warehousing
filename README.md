@@ -16,20 +16,63 @@ MySQL Workbench was used to generate the schema for the Arborist Elite database 
 
 ![Arborist Elite Schema](Arborist_Elite_Schema.png)
 
-### What are the definitions for the column names?
-Columns included in the condensed dataframe include:
+## Database Schema Overview
+### Table: `inventory`
+| Column Name   | Data Type     | Description                            |
+|---------------|---------------|----------------------------------------|
+| `Tree_ID`     | Integer       | Unique identifier for each tree.       |
+| `harvested`   | Date          | Date the tree was harvested (YYYY-MM-DD|
+| `latitude`    | Decimal       | Latitude coordinates of the tree.      |
+| `longitude`   | Decimal       | Longitude coordinates of the tree.     |
+| `Species_ID`  | String        | Identifier linking to the `species_key` table. |
+| `County_ID`   | String        | Identifier linking to the `county_key` table.  |
+| `DIA`         | Decimal       | Diameter of the tree in inches.                  |
+| `VOLBFNET`    | Decimal       | Net volume in board feet.              |
 
-- **Observed_on**: The date when the observation was made (**YEAR-MONTH-DAY**)
-- **Time_observed_at**: The date(**YEAR-MONTH-DAY**), military time (**HOUR-MINUTE-SECOND**), and time zone (**+xxxx**) when the observation was made 
-- **User_id**: A unique identification number for the user who made the observation
-- **User_name**: The username of the individual who made the observation
-- **created_at**: The date(**YEAR-MONTH-DAY**), military time (**HOUR-MINUTE-SECOND**), and time zone (**+xxxx**) when the observation was first recorded on iNaturalist
-- **Updated_at**: The date(**YEAR-MONTH-DAY**), military time (**HOUR-MINUTE-SECOND**), and time zone (**+xxxx**) when the observation was last updated on iNaturalist
-- **Latitude**: The latitude coordinates where the observation was made
-- **Longitude**: The longitude coordinates where the observation was made
-- **Species_guess**: The users guess at the species of the observation
-- **Scientific_name**: The scientific name of the observation
-- **Common_name**: The common name of the observation
+### Table: `customers`
+| Column Name   | Data Type     | Description                            |
+|---------------|---------------|----------------------------------------|
+| `id`          | Integer       | Unique identifier for each customer.   |
+| `first_name`  | String        | First name of the customer.            |
+| `last_name`   | String        | Last name of the customer.             |
+| `Address1`    | String        | Primary address of the customer.       |
+| `Address2`    | String (NULL) | Secondary address (optional).          |
+| `City`        | String        | City of the customer.                  |
+| `State`       | String        | State of the customer.                 |
+| `Zip`         | String        | ZIP code of the customer's address.    |
 
+### Table: `sales`
+| Column Name   | Data Type     | Description                              |
+|---------------|---------------|------------------------------------------|
+| `sales_id`    | Integer       | Unique identifier for each sale.         |
+| `sales_date`  | Date          | Date of the sale.                        |
+| `sales_price` | Decimal       | Total price of the sale.                 |
+| `customer_id` | Integer       | Identifier linking to the `customers` table. |
+
+### Table: `lumber_price`
+| Column Name   | Data Type     | Description                            |
+|---------------|---------------|----------------------------------------|
+| `Species_ID`  | String        | Identifier linking to the `species_key` table. |
+| `Price_BDFT`  | Decimal       | Price per board foot for the species.  |
+
+### Table: `species_key`
+| Column Name   | Data Type     | Description                            |
+|---------------|---------------|----------------------------------------|
+| `Species_ID`  | String        | Unique identifier for species.         |
+| `Species_name`| String        | Scientific name of the species.        |
+| `Common_name` | String        | Common name of the species.            |
+
+### Table: `county_key`
+| Column Name   | Data Type     | Description                            |
+|---------------|---------------|----------------------------------------|
+| `County_ID`   | String        | Unique identifier for the county.      |
+| `County_name` | String        | Name of the county.                    |
+
+### Table: `logs`
+| Column Name   | Data Type     | Description                            |
+|---------------|---------------|----------------------------------------|
+| `Tree_ID`     | Integer       | Identifier for the tree in `inventory`.|
+| `sales_price` | Decimal       | Price for the tree when sold.          |
+| `sales_ID`    | Integer       | Identifier linking to the `sales` table.|
 ## Regulations to Using the Data
 [Terms of use](https://www.inaturalist.org/pages/terms) for the iNaturalist website and accompanying data 
