@@ -14,9 +14,8 @@ R was used to create the "inventory" for Arborist_Elite. Data from both iNatural
 Python was used to create the database within MySQL Workbench
 MySQL Workbench was used to generate the schema for the Arborist Elite database and run queries
 
-![Arborist Elite Schema](Arborist_Elite_Schema.png)
-
 ## Database Schema Overview
+![Arborist Elite Schema](Arborist_Elite_Schema.png)
 ### Table: `inventory`
 | Column Name   | Data Type     | Description                            |
 |---------------|---------------|----------------------------------------|
