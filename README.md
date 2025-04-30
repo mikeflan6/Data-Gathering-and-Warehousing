@@ -74,5 +74,6 @@ MySQL Workbench was used to generate the schema for the Arborist Elite database 
 | `sales_price` | Decimal       | Price for the tree when sold.          |
 | `sales_ID`    | Integer       | Identifier linking to the `sales` table.|
 ## Regulations to Using the Data
-[Terms of use](https://www.inaturalist.org/pages/terms) for the iNaturalist website and accompanying data 
+[Terms of use](https://www.inaturalist.org/pages/terms) for the iNaturalist website and accompanying data  
+
 [USDA Regulations & Directives] (https://www.fs.usda.gov/about-agency/regulations-policies)
