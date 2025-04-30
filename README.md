@@ -76,4 +76,6 @@ MySQL Workbench was used to generate the schema for the Arborist Elite database 
 ## Regulations to Using the Data
 [Terms of use](https://www.inaturalist.org/pages/terms) for the iNaturalist website and accompanying data  
 
-[USDA Regulations & Directives](https://www.fs.usda.gov/about-agency/regulations-policies)
+[USDA](https://www.fs.usda.gov/about-agency/regulations-policies)Regulations & Directives
+
+[Mockaroo](https://www.mockaroo.com/help/terms_of_use) Terms of Use
